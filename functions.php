@@ -261,27 +261,33 @@ if ( ! function_exists( 'twentythirteen_paging_nav' ) ) :
  *
  * @return void
  */
-function twentythirteen_paging_nav() {
+function twentythirteen_paging_nav()
+{
 	global $wp_query;
 
 	// Don't print empty markup if there's only one page.
 	if ( $wp_query->max_num_pages < 2 )
 		return;
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
-		<div class="nav-links">
+	
+	<div class="row justify-content-center">
+		
+		<div class="col-lg-4 text-center">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
+
+				<?php next_posts_link( __( 'Entradas anteriores', 'twentythirteen' ) ); ?>
+
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
 			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
 			<?php endif; ?>
 
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
+		</div>
+
+	</div>
+
 	<?php
 }
 endif;
@@ -337,18 +343,18 @@ function twentythirteen_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
 	$categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
 	if ( $categories_list ) {
-		echo '<span class="categories-links">' . $categories_list . '</span>';
+		echo '&nbsp;&nbsp;<span class="categories-links">' . $categories_list . '</span>';
 	}
 
 	// Translators: used between list items, there is a space after the comma.
 	$tag_list = get_the_tag_list( '', __( ', ', 'twentythirteen' ) );
 	if ( $tag_list ) {
-		echo '<span class="tags-links">' . $tag_list . '</span>';
+		echo '&nbsp;&nbsp;<span class="tags-links">' . $tag_list . '</span>';
 	}
 
 	// Post author
 	if ( 'post' == get_post_type() ) {
-		printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+		printf( '<br /><span class="author vcard">Enviado por <a class="url fn n" href="%1$s" title="%2$s" rel="author"><strong>%3$s</strong></a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
 			get_the_author()
