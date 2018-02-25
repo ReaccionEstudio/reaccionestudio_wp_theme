@@ -929,7 +929,7 @@ ul.nav-menu li:hover > ul,
 
 .site-header .search-form {
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 1px;
 }
 
