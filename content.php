@@ -10,13 +10,13 @@
  */
 ?>
 
-<div id="post-<?php the_ID(); ?>" style="display: block;" class="col-lg-4 blogs-load">
+<div id="post-<?php the_ID(); ?>" class="col-lg-4 blogs-load">
 	
 	<div class="single-blog-post">
 		
 		<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 		<div class="blog-img">
-			<?php the_post_thumbnail(); ?>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a>
 		</div>
 		<?php endif; ?>
 

@@ -3122,3 +3122,13 @@ footer.entry-meta {
 		color: #333;
 	}
 }
+.attachment-custom-thumb{
+	max-height: 200px !important;
+	width: auto;
+}
+.custom-margin-single-post-area{
+	padding-top: 50px !important;
+}
+.single-post-thumb img{
+	padding-top: 20px;
+}
