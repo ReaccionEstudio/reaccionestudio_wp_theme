@@ -9,28 +9,41 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<div id="primary" class="content-area">
+	<div id="content" class="site-content" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<header class="page-header">
+			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentythirteen' ), get_search_query() ); ?></h1>
+		</header>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentythirteen' ), get_search_query() ); ?></h1>
-			</header>
+	</div>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+</div>
 
-			<?php twentythirteen_paging_nav(); ?>
+<div class="blogpost-area">
+	
+	<div class="container">
+		
+		<div class="row">
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+			<?php if ( have_posts() ) : ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+				<?php /* The loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php endwhile; ?>
+
+				<?php twentythirteen_paging_nav(); ?>
+
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
+
+		</div>
+	
+	</div>
+
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
