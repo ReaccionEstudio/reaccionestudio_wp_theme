@@ -272,16 +272,18 @@ function twentythirteen_paging_nav()
 	
 	<div class="row justify-content-center">
 		
-		<div class="col-lg-4 text-center">
+		<div class="col-lg-12 text-center">
 
 			<?php if ( get_next_posts_link() ) : ?>
 
-				<?php next_posts_link( __( 'Entradas anteriores', 'twentythirteen' ) ); ?>
+				<?php next_posts_link( __( '&laquo; Entradas anteriores', 'twentythirteen' ) ); ?>
 
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
+				
+				<?php previous_posts_link( __( 'Entradas recientes &raquo;', 'twentythirteen' ) ); ?>
+
 			<?php endif; ?>
 
 		</div>
