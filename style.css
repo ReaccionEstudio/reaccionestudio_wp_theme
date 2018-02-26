@@ -3132,3 +3132,7 @@ footer.entry-meta {
 .single-post-thumb img{
 	padding-top: 20px;
 }
+div#disqus_thread{
+	width: 55%;
+	margin: auto;
+}
