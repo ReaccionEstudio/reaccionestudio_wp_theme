@@ -3127,6 +3127,7 @@ footer.entry-meta {
 }
 .custom-margin-single-post-area{
 	padding-top: 50px !important;
+	padding-bottom: 50px;
 }
 .single-post-thumb img{
 	padding-top: 20px;
@@ -3135,4 +3136,13 @@ div#disqus_thread{
 	width: 55%;
 	margin: auto;
 	margin-bottom: 20px;
+}
+div.google-horizontal-top-ad{
+	padding-bottom: 50px;
+}
+div.blogpost-area-padding-blog{
+	padding: 50px 0;
+}
+div.google-adsense-entry-footer-content{
+	padding-top: 50px !important;
 }

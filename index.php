@@ -16,8 +16,25 @@
 
 get_header(); ?>
 
-	<div class="blogpost-area">
+	<div class="blogpost-area blogpost-area-padding-blog">
+
+		<div class="container google-horizontal-top-ad">
+
+			<!-- blog reaccionestudio horizontal -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-7890141528894816"
+			     data-ad-slot="6590794488"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<!-- fin blog reaccionestudio horizontal -->
+
+		</div>
+		
 		<div class="container">
+
 			<div class="row">
 
 				<?php if ( have_posts() ) : ?>
