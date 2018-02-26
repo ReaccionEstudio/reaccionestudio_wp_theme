@@ -2499,7 +2499,7 @@ footer.entry-meta {
  */
 
 .site-footer {
-	background-color: #e8e5ce;
+	background-color: #000 i;
 	color: #686758;
 	font-size: 14px;
 	text-align: center;
@@ -2511,11 +2511,11 @@ footer.entry-meta {
 }
 
 .site-footer a {
-	color: #686758;
+	color: #FFF !important;
 }
 
 .site-footer .sidebar-container {
-	background-color: #220e10;
+	background-color: #262E2E;
 	padding: 20px 0;
 }
 
@@ -3135,4 +3135,5 @@ footer.entry-meta {
 div#disqus_thread{
 	width: 55%;
 	margin: auto;
+	margin-bottom: 20px;
 }

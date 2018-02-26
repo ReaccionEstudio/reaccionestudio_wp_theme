@@ -16,10 +16,10 @@
 				</div>
 				<?php endif; ?>
 
-				<div class="data-section">
-					
-					<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
-
+				<div class="row">
+					<div class="data-section">
+						<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+					</div>
 				</div>
 
 			</div>
