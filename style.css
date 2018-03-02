@@ -3146,3 +3146,19 @@ div.blogpost-area-padding-blog{
 div.google-adsense-entry-footer-content{
 	padding-top: 50px !important;
 }
+
+@media (max-width: 479px){
+
+	div.data-section{
+		padding: 0 20px;
+	}
+	div.single-post-area div.col-lg-10 div.row h1{
+		padding: 0 20px;	
+	}
+	nav.main-navigation{
+		width: 100%;
+	}
+	div#disqus_thread{
+		width: 90%;
+	}
+}
