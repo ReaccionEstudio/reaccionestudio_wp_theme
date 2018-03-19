@@ -3162,3 +3162,9 @@ div.google-adsense-entry-footer-content{
 		width: 90%;
 	}
 }
+
+.data-section span{
+	font-weight: normal !important;
+	font-size: 12px !important;
+	float: none !important;
+}
