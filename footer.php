@@ -17,5 +17,8 @@
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
+
+	<script type="text/javascript" src="https://blog.reaccionestudio.com/wp-content/themes/reaccionestudio_theme/js/app.js"></script>
+
 </body>
 </html>

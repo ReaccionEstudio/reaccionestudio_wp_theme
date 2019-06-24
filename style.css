@@ -3168,3 +3168,8 @@ div.google-adsense-entry-footer-content{
 	font-size: 12px !important;
 	float: none !important;
 }
+.fixed {
+    position: fixed;
+    top:20px;
+    width: 100%; 
+}

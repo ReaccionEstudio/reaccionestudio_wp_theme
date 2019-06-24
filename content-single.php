@@ -1,25 +1,37 @@
 <div class="single-post-area custom-margin-single-post-area">
-		
-	<div class="container google-horizontal-top-ad">
-
-		<!-- blog reaccionestudio horizontal -->
-		<ins class="adsbygoogle"
-		     style="display:block"
-		     data-ad-client="ca-pub-7890141528894816"
-		     data-ad-slot="6590794488"
-		     data-ad-format="auto"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-		<!-- fin blog reaccionestudio horizontal -->
-
-	</div>
 
 	<div class="container">
 		
-		<div class="row justify-content-center">
+		<?php 
+
+			$mainContentClasses = 'col-lg-8 col-xs-10';
+
+			if ( wp_is_mobile() ) { 
+
+				$mainContentClasses = 'col-lg-10 col-10';
+
+		?>
+
+			<div class="container google-horizontal-top-ad">
+
+				<!-- blog reaccionestudio horizontal -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-7890141528894816"
+				     data-ad-slot="6590794488"
+				     data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+				<!-- fin blog reaccionestudio horizontal -->
+
+			</div>
+
+		<?php } ?>
+
+		<article class="row justify-content-center">
 			
-			<div class="col-lg-10">
+			<div class="<?= $mainContentClasses ?>">
 
 				<div class="text-center">
 					<?php the_post_thumbnail("custom-thumb"); ?>
@@ -39,7 +51,42 @@
 
 			</div>
 
-		</div>
+		<?php if ( ! wp_is_mobile() ) { ?>
+
+			<div class="col-lg-4 d-none d-sm-block">
+				
+				<div id="right_anun" class="sticky">
+
+					<!-- reaccion-articulo-right -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-7890141528894816"
+					     data-ad-slot="5979476108"
+					     data-ad-format="auto"
+					     data-full-width-responsive="true"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+
+					<br />
+
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-7890141528894816"
+					     data-ad-slot="4586503381"
+					     data-ad-format="auto"
+					     data-full-width-responsive="true"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+
+				</div>
+
+			</div>
+
+		<?php } ?>
+
+		</article> 
 		
 		<div class="google-adsense-entry-footer-content">
 			<ins class="adsbygoogle"
@@ -55,3 +102,9 @@
 	</div>
 	
 </div>
+
+<script type="text-javascript">
+
+	
+
+</script>
